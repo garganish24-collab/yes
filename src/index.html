@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand">HABIT <span>TRACKER</span></h1>
+    <div class="topbar-right" id="topbar-right"></div>
+  </header>
+
+  <div id="notice" class="notice" hidden></div>
+
+  <main id="view"></main>
+
+  <aside id="drawer" class="drawer" hidden></aside>
+
+  <nav class="tabs">
+    <button class="tab" data-tab="home">Home</button>
+    <button class="tab" data-tab="grid">Grid</button>
+    <button class="tab" data-tab="challenge">75 Day</button>
+    <button class="tab" data-tab="habits">Habits</button>
+  </nav>
+
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
